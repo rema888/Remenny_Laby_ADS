@@ -1,5 +1,5 @@
 #include <iostream> 
-
+ 
 void QuickSort(int arr[], int left, int right) 
 {
     if(left > right)  // условие выхода из рекурсии, когда подмассив пуст или подмассив содержит 1 элемент
@@ -27,12 +27,13 @@ void QuickSort(int arr[], int left, int right)
     // i стал больше j 
     QuickSort(arr, left, j); // для каждой из полученных частей вызываем QuickSort отдельно
     QuickSort(arr, i, right);
-}
+} 
+
 
 int main()
 {
-    const int X = 20;
-    int arr[X];
+    const int X = 30;
+    int arr[X];   
 
     std::cout << "Исходный массив: " << std::endl;
     for (int i=0;i<X;i++)
